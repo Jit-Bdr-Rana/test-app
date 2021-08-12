@@ -2,7 +2,7 @@ import React from 'react'
 
 function navbar() {
     return (
-        <nav className="shadow navbar  navbar-expand-lg navbar-light bg-white">
+        <nav className="shadow-sm navbar  navbar-expand-lg navbar-light bg-white">
 
   <a className="navbar-brand border p-2 bg-light " href="#"><i class="fa fa-list  ml-2 mr-4" aria-hidden="true"></i>Categories</a>
   
@@ -14,7 +14,7 @@ function navbar() {
         <a className="nav-link text-uppercase" href="#">Home <span className="sr-only">(current)</span></a>
       </li>
 
-      <li className="nav-item active ml-2 mr-2">
+      <li className="nav-item active  ml-2 mr-2">
         <a className="nav-link text-uppercase" href="#">Home <span className="sr-only">(current)</span></a>
       </li>
       <li className="nav-item active ml-2 mr-2">

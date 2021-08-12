@@ -2,11 +2,32 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
 const content = () => {
     
       
 
     return (
+        <>
         <div className="row mt-2 ml-1 container-fluid">
 
             <div className="row  col-md-4 col-sm-12 col-xl-4 border bg-white">
@@ -236,15 +257,86 @@ const content = () => {
 
             </div>
 
-            <div className="col-12 mt-2">
+            
+
+            
+        </div>
+        <div className="row m-0">
             <div className="col-12 p-3 bg-light">
                 <h4>You may also like</h4>
+                <Carousel responsive={responsive}>
+                    <div >
+                       <div className="col-12 pt-3 pl-5 m-2">
+                    
+                        <img src="https://bhotahiti.com/wp-content/uploads/2021/02/N-1-scaled-510x510.jpg" className="coursal-image" /> 
+                        <p className="m-0 mt-1">Buy tshirt</p>
+                        <h4>NRS 12000</h4>
+                    </div>
+                    </div>
+                 <div >
+                 <div className="col-12 pt-3 pl-5 m-2">
+                    
+                        <img src="https://bhotahiti.com/wp-content/uploads/2021/02/N-1-scaled-510x510.jpg" className="coursal-image" /> 
+                        <p className="m-0 mt-1">Buy tshirt</p>
+                        <h4>NRS 12000</h4>
+                    </div>
+                    </div>
+                    <div >
+                    <div className="col-12 pt-3 pl-5 m-2">
+                    
+                        <img src="https://bhotahiti.com/wp-content/uploads/2021/02/N-1-scaled-510x510.jpg" className="coursal-image" /> 
+                        <p className="m-0 mt-1">Buy tshirt</p>
+                        <h4>NRS 12000</h4>
+                    </div>
+                    </div>
+                    <div >
+                    <div className="col-12 pt-3 pl-5 m-2">
+                    
+                        <img src="https://bhotahiti.com/wp-content/uploads/2021/02/N-1-scaled-510x510.jpg" className="coursal-image" /> 
+                        <p className="m-0 mt-1">Buy tshirt</p>
+                        <h4>NRS 12000</h4>
+                    </div>
+                    </div>
+                    <div >
+                    <div className="col-12 pt-3 pl-5 m-2">
+                    
+                        <img src="https://bhotahiti.com/wp-content/uploads/2021/02/N-1-scaled-510x510.jpg" className="coursal-image" /> 
+                        <p className="m-0 mt-1">Buy tshirt</p>
+                        <h4>NRS 12000</h4>
+                    </div>
+                    </div>
+                    <div >
+                    <div className="col-12 pt-3 pl-5 m-2">
+                    
+                        <img src="https://bhotahiti.com/wp-content/uploads/2021/02/N-1-scaled-510x510.jpg" className="coursal-image" /> 
+                        <p className="m-0 mt-1">Buy tshirt</p>
+                        <h4>NRS 12000</h4>
+                    </div>
+                    </div>
+            </Carousel>
                 
             </div>
             </div>
 
-            
-        </div>
+            <div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active font-weight-bold" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link font-weight-bold" id="profile-tab " data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link font-weight-bold" id="contact-tab font-weight-bold color" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                            </li>
+                    </ul>
+                            <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><div className="container m-3 p-2">Home</div></div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div className="container m-3 p-2">Buyers review</div></div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><div className="container m-3 p-2">Question and answer</div></div>
+                            </div>
+            </div>
+        </>
     )
 }
 
